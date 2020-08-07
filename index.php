@@ -2,12 +2,16 @@
 	// Calling includes
 	include './includes/html_header.php';
 	include './includes/html_footer.php';
+	include './includes/css_template.php';
 	include './includes/js_template.php';
 	
 	// Set up header and page title
 	html_header("Test Page");
+	// Call css template
+	css_template();
 	// Call js template
 	js_template();
+	
 	
 	// Example body!
 	echo '
