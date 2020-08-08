@@ -19,9 +19,14 @@
 		
 	}
 	
-	// For MSSQL....
+	// For MSSQL.... {warning this function does not work with XAMPP!}
 	function conn_mssql(){
 		
+		$server_name = "localhost"; // Replace with your server name!
+		$connectionOptions = array("Database" => "database name", "Uid" => "user id", "PWD" => "database password");
+		$conn = sqlsrv_connect($server_name, $connectionOptions);
+		// Check on the connection!
+		echo ($conn) ? 'Database connected!' : 'Error! no connection';
 	}
 	
 ?>
