@@ -19,8 +19,8 @@
 			<br><h4>Hi there this project is still under construction</h4><br>;) started on 8/4/2020 <br>';
 			
 	
-	// Testing db function (MSSQL)!
-	conn_mssql();
+	// Testing db function (MySQL)!
+	conn_mysql()
 	
 	// Set up footer and text on footer
 	html_footer("2020 test page!");
