@@ -20,7 +20,7 @@
 			
 	
 	// Testing db function (MySQL)!
-	conn_mysql()
+	conn_mysql();
 	
 	// Set up footer and text on footer
 	html_footer("2020 test page!");
