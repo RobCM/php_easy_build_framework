@@ -17,14 +17,22 @@
 	// For MySQL....
 	function conn_mysql(){
 		
+		$server_name = "localhost"; // Replace with your server name!
+		$user_name = "databaseuser"; 
+		$password = "userpassword";
+		$database_name = "thedatabasename";
+		$conn = new mysqli($server_name, $user_name, $password, $database_name);
+		// Check on the connection!
+		echo (!$conn->connect_error) ? 'Database connected!' : 'Error! no connection';
+		
 	}
 	
 	// For MSSQL.... {warning this function does not work with XAMPP!}
 	function conn_mssql(){
 		
 		$server_name = "localhost"; // Replace with your server name!
-		$connectionOptions = array("Database" => "database name", "Uid" => "user id", "PWD" => "database password");
-		$conn = sqlsrv_connect($server_name, $connectionOptions);
+		$conn_credentials = array("Database" => "database name", "Uid" => "user id", "PWD" => "database password");
+		$conn = sqlsrv_connect($server_name, $conn_credentials);
 		// Check on the connection!
 		echo ($conn) ? 'Database connected!' : 'Error! no connection';
 	}
