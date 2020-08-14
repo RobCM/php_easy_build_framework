@@ -25,6 +25,22 @@
 		// Check on the connection!
 		echo (!$conn->connect_error) ? 'Database connected!' : 'Error! no connection';
 		
+		// SQL query
+		$sql = 'SELECT * FROM table_name;';
+		$result = mysqli_query($conn, $sql) or die(mysqli_error($conn));
+		
+		if(mysqli_num_rows($result) > 0){
+			
+			// For each row of data!
+			while($row = mysqli_fetch_assoc($result)){
+				echo $row['data_item_colum'];
+			}
+			
+		}
+		else{
+			echo 'No data!';
+		}
+		
 	}
 	
 	// For MSSQL.... {warning this function does not work with XAMPP!}
