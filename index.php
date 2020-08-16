@@ -19,14 +19,14 @@
 	
 	// Example body!
 	echo '
-		<div class = "master_container">
-			<div id = "container_1">
-				<h4>Hi there this project is still under construction</h4>
-			</div>
-			<div id = "container_2">
-				started on 8/4/2020 <br>
-			</div>
-		</div>';
+			<div class="master_container">
+				<div id="container_1">
+					<h4>Hi there this project is still under construction</h4>
+				</div>
+				<div id="container_2">
+					started on 8/4/2020 <br>
+				</div>
+			</div>';
 			
 	
 	// Testing db function (MySQL)!
