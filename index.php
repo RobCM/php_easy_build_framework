@@ -1,4 +1,7 @@
 <?php
+	// To block PHP errors comment out if need it for testing!
+	error_reporting(E_ERROR);
+	
 	// Calling includes
 	include './includes/html_header.php';
 	include './includes/html_footer.php';
@@ -16,7 +19,14 @@
 	
 	// Example body!
 	echo '
-			<br><h4>Hi there this project is still under construction</h4><br>;) started on 8/4/2020 <br>';
+		<div class = "master_container">
+			<div id = "container_1">
+				<h4>Hi there this project is still under construction</h4>
+			</div>
+			<div id = "container_2">
+				started on 8/4/2020 <br>
+			</div>
+		</div>';
 			
 	
 	// Testing db function (MySQL)!
