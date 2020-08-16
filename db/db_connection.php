@@ -60,7 +60,7 @@
 			die(FormatErrors(sqlsrv_errors()));
 		}
 		else{
-			while ($row = sqlsrv_fetch_array(($row_results, SQLSRV_FETCH_ASSOC)){
+			while ($row = sqlsrv_fetch_array($row_results, SQLSRV_FETCH_ASSOC)){
 				echo $row['data_item_colum'];
 			}
 		}
