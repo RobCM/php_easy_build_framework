@@ -24,13 +24,17 @@
 					<h4>Hi there this project is still under construction</h4>
 				</div>
 				<div id="container_2">
-					started on 8/4/2020 <br>
-				</div>
-			</div>';
+					<h4>started on 8/4/2020</h4>
+				</div>';
+	
 			
 	
-	// Testing db function (MySQL)!
+	// Testing db function (MySQL)
 	conn_mysql();
+	
+	// Close the master_container div
+	echo '
+			</div>';
 	
 	// Set up footer and text on footer
 	html_footer("2020 test page!");
