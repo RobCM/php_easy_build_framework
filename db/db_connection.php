@@ -54,15 +54,14 @@
 		
 		// SQL query
 		$sql= 'SELECT * FROM table_name;';
-		$getResults= sqlsrv_query($conn, $sql);
 		
-		if($row_results == FALSE){
-			die(FormatErrors(sqlsrv_errors()));
-		}
-		else{
-			while ($row = sqlsrv_fetch_array($row_results, SQLSRV_FETCH_ASSOC)){
+		$result = sqlsrv_prepare($conn, $sql);
+		sqlsrv_execute($result);
+
+		// For each row of data!
+		while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)){
 				echo $row['data_item_colum'];
-			}
+
 		}
 		
 	}
