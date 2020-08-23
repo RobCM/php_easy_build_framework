@@ -23,7 +23,7 @@
 		$database_name = "thedatabasename";
 		$conn = new mysqli($server_name, $user_name, $password, $database_name);
 		// Check on the connection!
-		echo (!$conn->connect_error) ? 'Database connected!' : 'Error! no connection';
+		echo (!$conn->connect_error) ? 'Database connected!' : 'Error! no DB connection';
 		
 		// SQL query
 		$sql = 'SELECT * FROM table_name;';
