@@ -14,7 +14,7 @@
 		echo '
 			<style>
 				body {
-					background-color: #bdf4f2;
+					background-color: #f2f3b7;
 				}
 				.master_container {
 					display: flex;
