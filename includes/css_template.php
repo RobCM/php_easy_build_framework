@@ -34,6 +34,14 @@
 					flex: 2;
 					padding: 5px;
 				}
+				form {
+					padding: 10px;
+					border-radius: 15px;
+					border: 1px solid black;
+				}
+				#submit_btn {
+					cursor: pointer;
+				}
 			</style>
 		';
 	}
