@@ -8,6 +8,7 @@
 	include './includes/css_template.php';
 	include './includes/js_template.php';
 	include './db/db_connection.php';
+	include './forms/forms_template.php';
 	
 	// Set up header and page title
 	html_header("Test Page");
@@ -16,12 +17,12 @@
 	// Call js template
 	js_template();
 	
-	
 	// Example body!
 	echo '
 			<div class="master_container">
 				<div id="container_1">
 					<h4>Hi there this project is still under construction</h4>
+					'.form_1().'
 				</div>
 				<div id="container_2">
 					<h4>started on 8/4/2020</h4>
@@ -30,12 +31,14 @@
 			
 	
 	// Testing db function (MySQL)
-	conn_mysql();
+	//conn_mysql();
 	
 	// Close the master_container div
 	echo '
 			</div>';
+			
 	
+			
 	// Set up footer and text on footer
 	html_footer("2020 test page!");
 ?>
