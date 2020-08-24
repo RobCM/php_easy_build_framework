@@ -41,6 +41,7 @@
 			echo 'No data!';
 		}
 		
+		
 	}
 	
 	// For MSSQL.... {warning this function does not work with XAMPP!}
