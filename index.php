@@ -14,8 +14,6 @@
 	html_header("Test Page");
 	// Call css template
 	css_template();
-	// Call js template
-	js_template();
 	
 	// Example body!
 	echo '
@@ -38,6 +36,8 @@
 			</div>';
 			
 	
+	// Call js template at the end so it can function after all html components have been load!
+	js_template();
 			
 	// Set up footer and text on footer
 	html_footer("2020 test page!");
