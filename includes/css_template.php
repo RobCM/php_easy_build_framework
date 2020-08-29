@@ -14,14 +14,14 @@
 		echo '
 			<style>
 				body {
-					background-color: #f2f3b7;
+					background-color: white;
 				}
 				.master_container {
 					display: flex;
 					width: 50%;
 					height: 400px;
 					margin: auto;
-					border: 1px solid black;
+					background-color: #c7d4e4;
 					padding: 10px;
 					border-radius: 15px;
 					box-shadow: 9px 14px 6px 0px rgba(0,0,0,0.38);
@@ -37,10 +37,13 @@
 				form {
 					padding: 10px;
 					border-radius: 15px;
-					border: 1px solid black;
+					border: 1px solid #6f6e6e;
 				}
 				#submit_btn {
 					cursor: pointer;
+					height: 35px;
+					width: 80px;
+					margin-left: 240px;
 				}
 			</style>
 		';
