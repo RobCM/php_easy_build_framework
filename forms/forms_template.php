@@ -17,6 +17,8 @@
 				  <input type="text" id="first_name" name="first_name"><br>
 				  <label for="last_name">Last name:</label><br>
 				  <input type="text" id="last_name" name="last_name"><br><br>
+				  <label for="last_name">Password:</label><br>
+				  <input type="password" id="user_pass" name="user_pass"><br><br>
 				  <input type="submit" id="submit_btn" value="Submit">
 				</form> 
 		';
