@@ -45,6 +45,12 @@
 					width: 80px;
 					margin-left: 240px;
 				}
+				input {
+					border-radius: 5px;
+					border: none;
+					height: 25px;
+					width: 155px;
+				}
 			</style>
 		';
 	}
