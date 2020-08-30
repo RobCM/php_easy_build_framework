@@ -14,7 +14,7 @@
 		$form_one = '
 				<form>
 				  <label for="first_name">First name:</label><br>
-				  <input type="text" id="first_name" name="first_name"><br>
+				  <input type="text" id="first_name" name="first_name"><br><br>
 				  <label for="last_name">Last name:</label><br>
 				  <input type="text" id="last_name" name="last_name"><br><br>
 				  <label for="last_name">Password:</label><br>
