@@ -36,8 +36,9 @@
 			</div>';
 			
 	
-	// Call js template at the end so it can function after all html components have been load!
-	js_template();
+	// Call js functions at the end so it can function after all html components have been load!
+	js_gui();
+	js_ajax();
 			
 	// Set up footer and text on footer
 	html_footer("2020 test page!");
