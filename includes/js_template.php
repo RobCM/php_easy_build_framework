@@ -9,9 +9,14 @@
 		It also calls the jQuery library
 
 	*/
+	function js_libs(){
+		echo'
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		';
+	}
+	
 	function js_gui(){
 		echo '
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 			<script>
 			
 				// Basic animation 
