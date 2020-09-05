@@ -37,6 +37,7 @@
 			
 	
 	// Call js functions at the end so it can function after all html components have been load!
+	js_libs();
 	js_gui();
 	js_ajax();
 			
