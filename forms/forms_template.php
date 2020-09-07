@@ -19,7 +19,7 @@
 				  <input type="text" id="last_name" name="last_name"><br><br>
 				  <label for="last_name">Password:</label><br>
 				  <input type="password" id="user_pass" name="user_pass"><br><br>
-				  <input type="submit" id="submit_btn" value="Submit">
+				  <button type="button" id="submit_btn">Submit</button> 
 				</form> 
 		';
 		
@@ -40,7 +40,7 @@
 				  <input type="text" id="phone" name="phone"><br><br>
 				  <label for="last_name">Password:</label><br>
 				  <input type="password" id="user_pass" name="user_pass"><br><br>
-				  <input type="submit" id="submit_btn" value="Submit">
+				  <button type="button" id="submit_btn">Submit</button> 
 				</form> 
 		';
 		
