@@ -31,25 +31,29 @@
 		echo'
 			<script>
 			
-			// Ajax 
-				var url_value = "/post_url.php";
-				
-				$.ajax({
-					url: url_value,
-					type: "POST",
-					data: {
-						value_one: "test_one",
-						value_two: "test_two"
-					},
-					dataType: "json",
-					success: function (data){
-						// Append to HTML element
-						$("container_1").append(data);
-					},
-					error: function (error){
-						// Append to HTML element
-						$("container_1").append("Error ${error}");
-					}
+				$("#submit_btn").on("click", function(){
+			
+					// AJAX 
+					var url_value = "post_url.php";
+					
+					$.ajax({
+						url: url_value,
+						type: "POST",
+						data: {
+							value_one: "test_one",
+							value_two: "test_two"
+						},
+						dataType: "json",
+						success: function (data){
+							// Append to HTML element
+							$("container_1").append(data);
+						},
+						error: function (error){
+							// Append to HTML element
+							$("container_1").append("Error ${error}");
+						}
+					});
+					
 				});
 			
 			</script>
