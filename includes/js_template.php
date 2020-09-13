@@ -32,29 +32,26 @@
 			<script>
 			
 				$("#submit_btn").on("click", function(){
-			
-					// AJAX 
-					var url_value = "post_url.php";
+			     
+				    var url_value = "post_url.php";
 					
-					$.ajax({
-						url: url_value,
-						type: "POST",
-						data: {
-							value_one: "test_one",
-							value_two: "test_two"
-						},
-						dataType: "json",
-						success: function (data){
-							// Append to HTML element
-							$("container_1").append(data);
-						},
-						error: function (error){
-							// Append to HTML element
-							$("container_1").append("Error ${error}");
-						}
+					var params = {
+						value_one: "test_one",
+						value_two: "test_two"
+					}
+
+					$.post(url_value, params)
+					.done(function(data){
+						// Append to HTML element
+						$("body").append(data);
+				
+					})
+					.fail(function(error){
+						// Error handling
+						alert(error);
 					});
-					
-				});
+						
+				});		
 			
 			</script>
 		';
