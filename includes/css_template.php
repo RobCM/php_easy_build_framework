@@ -26,6 +26,12 @@
 					border-radius: 15px;
 					box-shadow: 9px 14px 6px 0px rgba(0,0,0,0.38);
 				}
+				.title_image {
+					width: 50%;
+					margin: auto;
+					height: 100px;
+					border-radius: 15px;
+				}
 				#container_1 {
 					flex: 1;
 					padding: 5px;
