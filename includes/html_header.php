@@ -15,6 +15,15 @@
 				<title>'.$page_title.'</title>
 				</head>
 				<body>
+		'
+		
+		// Title image
+		echo '
+			<div class="title_image">
+				
+				
+			</div>
+		
 		';
 	}
 ?>
