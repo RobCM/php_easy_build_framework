@@ -24,17 +24,14 @@
 				</div>
 				<div id="container_2">
 					<h4>started on 8/4/2020</h4>
-				</div>';
-	
-			
+				</div>';	
 	
 	// Testing db function (MySQL)
 	//conn_mysql();
 	
 	// Close the master_container div
 	echo '
-			</div>';
-			
+			</div>';		
 	
 	// Call js functions at the end so it can function after all html components have been load!
 	js_libs();
