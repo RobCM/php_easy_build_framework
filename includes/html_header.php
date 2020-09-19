@@ -20,8 +20,7 @@
 		// Title image
 		echo '
 			<div class="title_image">
-				
-				
+				 <img id="the_title_img" src="titleimage.png" alt="title_image" width="500" height="600"> 
 			</div>
 		
 		';
