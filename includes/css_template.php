@@ -31,6 +31,11 @@
 					margin: auto;
 					height: 100px;
 					border-radius: 15px;
+					padding: 15px;
+				}
+				#the_title_img {
+					width: 100%;
+					height: 150px;
 				}
 				#container_1 {
 					flex: 1;
