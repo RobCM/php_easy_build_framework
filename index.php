@@ -17,7 +17,7 @@
 	
 	// Example body!
 	echo '
-			<div class="master_container">
+			<div class="master_container">	
 				<div id="container_1">
 					<h4>Hi there this project is still under construction</h4>
 					'.form_2().'
