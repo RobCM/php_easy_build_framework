@@ -74,7 +74,7 @@
 					<input type="text" id="address_1" name="address_1"><br><br>
 					<label for="address_2">Address line two:</label>	
 					<input type="text" id="address_2" name="address_2"><br><br>
-					<label for="country_list">Choose country</label>
+					<label for="country_list">Choose country:</label>
 					<select id="country_list" name="country_list">
 						<option value="AF">Afghanistan</option>
 						<option value="AX">Åland Islands</option>
