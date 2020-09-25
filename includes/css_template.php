@@ -62,6 +62,12 @@
 					height: 25px;
 					width: 155px;
 				}
+				select {
+					border-radius: 8px;
+					height: 30px;
+					width: 155px;
+					border: none;
+				}
 			</style>
 		';
 	}
