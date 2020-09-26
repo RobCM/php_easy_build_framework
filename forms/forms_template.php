@@ -74,6 +74,17 @@
 					<input type="text" id="address_1" name="address_1"><br><br>
 					<label for="address_2">Address line two:</label>	
 					<input type="text" id="address_2" name="address_2"><br><br>
+					<label for="city">City:</label>	
+					<input type="text" id="city" name="city">
+					
+					<label for="state">State:</label>
+					<select id="state_list" name="state_list">
+						<option value="TX">TX</option>
+						<option value=""></option>
+						<option value=""></option>
+					</select>
+					<br><br>
+					
 					<label for="country_list">Choose country:</label>
 					<select id="country_list" name="country_list">
 						<option value="AF">Afghanistan</option>
@@ -325,7 +336,7 @@
 						<option value="YE">Yemen</option>
 						<option value="ZM">Zambia</option>
 						<option value="ZW">Zimbabwe</option>
-					</select><br>
+					</select><br><br>
 					<button type="button" id="submit_btn">Submit</button> 				
 				</form> 
 		';
