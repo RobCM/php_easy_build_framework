@@ -62,10 +62,17 @@
 					height: 25px;
 					width: 155px;
 				}
-				select {
+				#country_list {
 					border-radius: 8px;
 					height: 30px;
 					width: 155px;
+					border: none;
+					margin-left: 10px;
+				}
+				#state_list {
+					border-radius: 8px;
+					height: 30px;
+					width: 60px;
 					border: none;
 				}
 			</style>
