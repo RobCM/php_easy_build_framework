@@ -72,8 +72,13 @@
 				<form>
 					<label for="address_1">Address line one:</label>	
 					<input type="text" id="address_1" name="address_1"><br><br>
+					
 					<label for="address_2">Address line two:</label>	
 					<input type="text" id="address_2" name="address_2"><br><br>
+					
+					<label for="zip_code">Zip code:</label>	
+					<input type="text" id="zip_code" name="zip_code"><br><br>
+					
 					<label for="city">City:</label>	
 					<input type="text" id="city" name="city">
 					
