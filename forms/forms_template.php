@@ -84,18 +84,18 @@
 					
 					<label for="state">State:</label>
 					<select id="state_list" name="state_list">
-						<option value="AL">Alabama</option>
-						<option value="AK">Alaska</option>
-						<option value="AZ">Arizona</option>
-						<option value="AR">Arkansas</option>
-						<option value="CA">California</option>
-						<option value="CO">Colorado</option>
-						<option value="CT">Connecticut</option>
-						<option value="DE">Delaware</option>
-						<option value="DC">District Of Columbia</option>
-						<option value="FL">Florida</option>
-						<option value="GA">Georgia</option>
-						<option value="HI">Hawaii</option>
+						<option value="AL">AL</option>
+						<option value="AK">AK</option>
+						<option value="AZ">AZ</option>
+						<option value="AR">AR</option>
+						<option value="CA">CA</option>
+						<option value="CO">CO</option>
+						<option value="CT">CT</option>
+						<option value="DE">DE</option>
+						<option value="DC">DC</option>
+						<option value="FL">FL</option>
+						<option value="GA">GA</option>
+						<option value="HI">HI</option>
 						<option value="ID">Idaho</option>
 						<option value="IL">Illinois</option>
 						<option value="IN">Indiana</option>
