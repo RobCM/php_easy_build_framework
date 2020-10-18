@@ -70,14 +70,14 @@
 		// Form HTML
 		$form_4 = '
 				<form>
+					<label for="name">Names:</label>	
+					<input type="text" id="name" name="name"><br><br>
+				
 					<label for="address_1">Address line one:</label>	
 					<input type="text" id="address_1" name="address_1"><br><br>
 					
 					<label for="address_2">Address line two:</label>	
 					<input type="text" id="address_2" name="address_2"><br><br>
-					
-					<label for="zip_code">Zip code:</label>	
-					<input type="text" id="zip_code" name="zip_code"><br><br>
 					
 					<label for="city">City:</label>	
 					<input type="text" id="city" name="city">
@@ -390,7 +390,12 @@
 						<option value="ZM">Zambia</option>
 						<option value="ZW">Zimbabwe</option>
 					</select><br><br>
-					<button type="button" id="submit_btn">Submit</button> 				
+					
+					<label for="zip_code">Zip code:</label>	
+					<input type="text" id="zip_code" name="zip_code"><br><br>
+					
+					<button type="button" id="submit_btn">Submit</button> 
+					
 				</form> 
 		';
 		
