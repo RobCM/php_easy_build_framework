@@ -70,8 +70,6 @@
 		// Form HTML
 		$form_4 = '
 				<form>
-					<label for="name">Names:</label>	
-					<input type="text" id="name" name="name"><br><br>
 				
 					<label for="address_1">Address line one:</label>	
 					<input type="text" id="address_1" name="address_1"><br><br>
