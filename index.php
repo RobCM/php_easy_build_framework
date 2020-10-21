@@ -20,6 +20,8 @@
 			<div class="master_container">	
 				<div id="container_1">
 					<h4>Hi there this project is still under construction</h4>
+					'.form_2().' 
+					<br><br>
 					'.form_4().'
 				</div>
 				<div id="container_2">
