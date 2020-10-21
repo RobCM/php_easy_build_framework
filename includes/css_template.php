@@ -19,7 +19,7 @@
 				.master_container {
 					display: flex;
 					width: 50%;
-					height: 400px;
+					height: 700px;
 					margin: auto;
 					background-color: #c7d4e4;
 					padding: 10px;
