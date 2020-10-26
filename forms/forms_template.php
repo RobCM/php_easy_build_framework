@@ -401,5 +401,23 @@
 		
 	}
 	
+	function form_5(){
+		
+		// Form HTML
+		$form_5 = '
+				<form>	
+				    <center>Gender</center>
+					<br>
+					<label for="sex_male">Male</label>
+					<input type="radio" class="radio_btn" id="sex_male" name="sex_male" value="male"/>
+					<br><br>
+					<button type="button" id="submit_btn">Submit</button> 				
+				</form> 
+		';
+		
+		return $form_5;
+		
+	}
+	
 	
 ?>
