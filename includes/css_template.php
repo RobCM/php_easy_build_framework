@@ -75,6 +75,10 @@
 					width: 60px;
 					border: none;
 				}
+				.radio_btn {
+					width: 10px;
+					height: 1px;
+				}
 			</style>
 		';
 	}
