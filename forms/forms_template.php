@@ -410,6 +410,15 @@
 					<br>
 					<label for="sex_male">Male</label>
 					<input type="radio" class="radio_btn" id="sex_male" name="sex_male" value="male"/>
+					<label for="sex_nonbinary">Non-binary</label>
+					<input type="radio" class="radio_btn" id="sex_nonbinary" name="sex_nonbinary" value="non_binary"/>
+					<br>
+					<label for="sex_female">Female</label>
+					<input type="radio" class="radio_btn" id="sex_female" name="sex_male" value="female"/>
+					<label for="sex_noanswer">I prefer not to answer</label>
+					<input type="radio" class="radio_btn" id="sex_noanswer" name="sex_noanswer" value="no_answer"/>
+					<br>
+					
 					<br><br>
 					<button type="button" id="submit_btn">Submit</button> 				
 				</form> 
