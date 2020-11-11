@@ -407,6 +407,7 @@
 		$form_5 = '
 				<form>	
 				    <center>Gender</center>
+					<hr></hr>
 					<br>
 					<label for="sex_male">Male</label>
 					<input type="radio" class="radio_btn" id="sex_male" name="sex_male" value="male"/>
@@ -418,7 +419,16 @@
 					<label for="sex_noanswer">I prefer not to answer</label>
 					<input type="radio" class="radio_btn" id="sex_noanswer" name="sex_noanswer" value="no_answer"/>
 					<br>
-					
+					<hr></hr>
+					<label for="age">Age:</label>
+					<select id="age_list" name="age_list">
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+					</select>
 					<br><br>
 					<button type="button" id="submit_btn">Submit</button> 				
 				</form> 
