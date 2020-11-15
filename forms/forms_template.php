@@ -438,6 +438,10 @@
 						<option value="31">31</option>
 						<option value="32">32</option>
 						<option value="33">33</option>
+						<option value="34">34</option>
+						<option value="35">35</option>
+						<option value="36">36</option>
+						<option value="37">37</option>
 					</select>
 					<br><br>
 					<button type="button" id="submit_btn">Submit</button> 				
