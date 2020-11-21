@@ -20,8 +20,11 @@
 			<script>
 			
 				// Basic animation 
-				$("form").hide();
-				$("form").fadeIn(2000);
+				$("#container_1").hide();
+				$("#container_1").fadeIn(2000);
+				
+				$("#container_2").hide();
+				$("#container_2").fadeIn(2000);
 				
 			</script>
 		';
