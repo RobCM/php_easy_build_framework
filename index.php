@@ -9,6 +9,7 @@
 	include './includes/js_template.php';
 	include './db/db_connection.php';
 	include './forms/forms_template.php';
+	include './comments_box/comments_template.php';
 	
 	// Set up header and page title
 	html_header("Test Page");
@@ -21,11 +22,11 @@
 				<div id="container_1">
 					<h4>Hi there this project is still under construction</h4>
 					'.form_2().' 
-					<br><br>
-					'.form_5().'
 				</div>
 				<div id="container_2">
 					<h4>started on 8/4/2020</h4>
+					<br>
+					'.comments_1().'
 				</div>';	
 	
 	// Testing db function (MySQL)
