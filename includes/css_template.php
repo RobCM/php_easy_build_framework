@@ -79,6 +79,18 @@
 					width: 10px;
 					height: 1px;
 				}
+				#main_comment_container {
+					width: 300px;
+					border-radius: 15px;
+					border: 1px solid #6f6e6e;
+					padding: 10px;
+				}
+				#text_comment {
+					width: 300px;
+				}
+				#comment_btn {
+					margin-left: 220px;
+				}
 			</style>
 		';
 	}
