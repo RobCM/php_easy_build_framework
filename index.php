@@ -40,6 +40,7 @@
 	js_libs();
 	js_gui();
 	js_ajax();
+	js_comment();
 			
 	// Set up footer and text on footer
 	html_footer("2020 test page!");
