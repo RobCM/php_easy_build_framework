@@ -59,4 +59,18 @@
 			</script>
 		';
 	}
+	
+	function js_comment(){
+		echo'
+			<script>
+			
+				$("#comment_btn").on("click", function(){
+					
+					alert("Testing...");
+					
+				});	
+				
+			</script>
+		';
+	}
 ?>
