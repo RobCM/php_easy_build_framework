@@ -85,6 +85,9 @@
 					border: 1px solid #6f6e6e;
 					padding: 10px;
 				}
+				textarea {
+				  resize: none;
+				}
 				#text_comment {
 					width: 300px;
 				}
