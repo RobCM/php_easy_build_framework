@@ -66,7 +66,7 @@
 			
 				$("#comment_btn").on("click", function(){
 					
-					alert("Testing...");
+					$("#text_comment_container").html("Comment Posted!");
 					
 				});	
 				
