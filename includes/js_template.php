@@ -68,6 +68,12 @@
 					
 					$("#text_comment_container").html("Comment Posted!");
 					
+					setTimeout(function(){
+						
+						$("#text_comment_container").html("Testing.....");
+						
+					}, 2500);
+					
 				});	
 				
 			</script>
