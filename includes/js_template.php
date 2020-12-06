@@ -69,8 +69,12 @@
 					$("#text_comment_container").html("Comment Posted!");
 					
 					setTimeout(function(){
-						
-						$("#text_comment_container").html("Testing.....");
+						// Recreate the comment box!
+						$("#text_comment_container").html("<div id=\"text_comment_container\">" +
+																"<textarea id=\"text_comment\" rows=\"10\" cols=\"60\">" +
+																"</textarea>" +
+																"<button type=\"button\" id=\"comment_btn\">Comment</button>" + 
+															"</div>");
 						
 					}, 2500);
 					
