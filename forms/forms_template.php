@@ -465,6 +465,11 @@
 						<option value="58">58</option>
 						<option value="59">59</option>
 						<option value="60">60</option>
+						<option value="61">61</option>
+						<option value="62">62</option>
+						<option value="63">63</option>
+						<option value="64">64</option>
+						<option value="65">65</option>
 					</select>
 					<br><br>
 					<button type="button" id="submit_btn">Submit</button> 				
