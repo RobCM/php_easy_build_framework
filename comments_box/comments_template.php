@@ -18,6 +18,8 @@
 						</textarea>
 						<button type="button" id="comment_btn">Comment</button> 
 					</div>
+					<div id="history_comment_container">
+					</div>
 				</div>
 		';
 		
