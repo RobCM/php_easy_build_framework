@@ -65,18 +65,19 @@
 			<script>
 			
 				$("#comment_btn").on("click", function(){
+					// comment data
+					var comment_text = $("#text_comment").val();
 					
-					$("#text_comment_container").html("Comment Posted!");
+					$("#text_comment_container").hide();
+					$("#main_comment_container").append("<div id=\"comment_posted_text\">Comment Posted!</div>");
 					
 					setTimeout(function(){
-						// Recreate the comment box!
-						$("#text_comment_container").html("<div id=\"text_comment_container\">" +
-																"<textarea id=\"text_comment\" rows=\"10\" cols=\"60\">" +
-																"</textarea>" +
-																"<button type=\"button\" id=\"comment_btn\">Comment</button>" + 
-															"</div>");
 						
-					}, 2500);
+						$("#text_comment_container").show();
+						$("#history_comment_container").append(comment_text + "<br>");
+						$("#comment_posted_text").remove();
+						
+					}, 2200);
 					
 				});	
 				
