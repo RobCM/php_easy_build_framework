@@ -66,18 +66,34 @@
 			
 				$("#comment_btn").on("click", function(){
 					// comment data
-					var comment_text = $("#text_comment").val();
+					var comment_text = $("#text_comment").val().trim();
 					
-					$("#text_comment_container").hide();
-					$("#main_comment_container").append("<div id=\"comment_posted_text\">Comment Posted!</div>");
-					
-					setTimeout(function(){
+					if(comment_text.length > 0){
 						
-						$("#text_comment_container").show();
-						$("#history_comment_container").append(comment_text + "<br>");
-						$("#comment_posted_text").remove();
+						$("#text_comment_container").hide();
+						$("#main_comment_container").append("<div id=\"comment_posted_text\">Comment Posted!</div>");
 						
-					}, 2200);
+						setTimeout(function(){
+							
+							$("#text_comment_container").show();
+							$("#history_comment_container").append(comment_text + "<br>");
+							$("#comment_posted_text").remove();
+							
+						}, 2200);
+						
+					}
+					else{
+						
+						$("#text_comment_container").hide();
+						$("#main_comment_container").append("<div id=\"comment_posted_text\">No comment to post!</div>");
+						
+						setTimeout(function(){
+							
+							$("#text_comment_container").show();
+							$("#comment_posted_text").remove();
+							
+						}, 2200);
+					}
 					
 				});	
 				
