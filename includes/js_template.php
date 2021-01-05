@@ -61,6 +61,11 @@
 	}
 	
 	function js_comment(){
+		
+		$date = date("m/d/Y");
+		$time = date("h:i:sa");
+		$timestamp = $date." at ".$time;
+		
 		echo'
 			<script>
 			
@@ -76,7 +81,7 @@
 						setTimeout(function(){
 							
 							$("#text_comment_container").show();
-							$("#history_comment_container").append(comment_text + "<br>");
+							$("#history_comment_container").append(comment_text + "<br>[ Posted on: '.$timestamp.' ]<br><hr>");
 							$("#comment_posted_text").remove();
 							
 						}, 2200);
