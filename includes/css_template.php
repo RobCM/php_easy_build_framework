@@ -94,6 +94,10 @@
 				#comment_btn {
 					margin-left: 220px;
 				}
+				#history_comment_container {
+					padding: 10px;
+					height: 200px;
+				}
 			</style>
 		';
 	}
