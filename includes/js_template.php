@@ -79,6 +79,8 @@
 						setTimeout(function(){
 							
 							$("#text_comment_container").show();
+							$("#history_comment_container").css("background-color", "lightgray");
+							$("#history_comment_container").css("overflow", "auto");
 							$("#history_comment_container").append(comment_text + "<br> Posted on: <br> [" + time_stamp + " ]<br><hr>");
 							$("#comment_posted_text").remove();
 							
