@@ -74,7 +74,7 @@
 					if(comment_text.length > 0){
 						
 						$("#text_comment_container").hide();
-						$("#main_comment_container").append("<div id=\"comment_posted_text\">Comment Posted!</div>");
+						$("body").prepend("<div id=\"comment_posted_text\">Comment Posted!</div>");
 						
 						setTimeout(function(){
 							
