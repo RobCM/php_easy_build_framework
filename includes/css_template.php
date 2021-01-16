@@ -98,6 +98,13 @@
 					padding: 10px;
 					height: 200px;
 				}
+				#comment_posted_text {
+					position: absolute;
+					margin: auto;
+					width: 100%;
+					height: 100%;
+					background-color: Blue;
+				}
 			</style>
 		';
 	}
