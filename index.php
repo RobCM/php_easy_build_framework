@@ -43,5 +43,5 @@
 	js_comment();
 			
 	// Set up footer and text on footer
-	html_footer("2020 test page!");
+	html_footer("2021 test page!");
 ?>
