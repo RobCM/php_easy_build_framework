@@ -74,7 +74,8 @@
 					if(comment_text.length > 0){
 						
 						$("#text_comment_container").hide();
-						$("body").prepend("<div id=\"comment_posted_text\">Comment Posted!</div>");
+						$("body").prepend("<div id=\"comment_posted_text\"><center> Comment Posted! </center></div>");
+						$("#comment_posted_text").css("background-color", "#c7d4e4");
 						
 						setTimeout(function(){
 							
@@ -84,20 +85,22 @@
 							$("#history_comment_container").append(comment_text + "<br> Posted on: <br> [" + time_stamp + " ]<br><hr>");
 							$("#comment_posted_text").remove();
 							
-						}, 2200);
+						}, 2000);
 						
 					}
 					else{
 						
 						$("#text_comment_container").hide();
-						$("#main_comment_container").append("<div id=\"comment_posted_text\">No comment to post!</div>");
+						$("body").prepend("<div id=\"comment_posted_text\"><center> No comment to posted! </center></div>");
+						$("#comment_posted_text").css("background-color", "#ec775f");
 						
 						setTimeout(function(){
 							
 							$("#text_comment_container").show();
 							$("#comment_posted_text").remove();
 							
-						}, 2200);
+						}, 2000);
+						
 					}
 					
 				});	
