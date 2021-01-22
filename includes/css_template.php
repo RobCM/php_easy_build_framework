@@ -100,9 +100,12 @@
 				}
 				#comment_posted_text {
 					position: absolute;
-					margin: auto;
-					width: 100%;
-					height: 100%;
+					top: 20%;
+					/* left: 50%; */
+					width: 250px;
+					height: 40px;
+					border-radius: 15px;
+					border: 1px solid #6f6e6e;
 				}
 			</style>
 		';
