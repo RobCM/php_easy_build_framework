@@ -90,7 +90,6 @@
 					}
 					else{
 						
-						$("#text_comment_container").hide();
 						$("body").prepend("<div id=\"comment_posted_text\"><center> No comment to posted! </center></div>");
 						$("#comment_posted_text").css("background-color", "#ec775f");
 						
