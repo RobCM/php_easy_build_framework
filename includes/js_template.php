@@ -82,7 +82,7 @@
 							$("#text_comment_container").show();
 							$("#history_comment_container").css("background-color", "lightgray");
 							$("#history_comment_container").css("overflow", "auto");
-							$("#history_comment_container").append(comment_text + "<br> Posted on: <br> [" + time_stamp + " ]<br><hr>");
+							$("#history_comment_container").append(comment_text + "<br><div class=\"time_stamp_com\"> Posted on: <br> [" + time_stamp + " ]</div><br><hr>");
 							$("#comment_posted_text").remove();
 							
 						}, 2000);
