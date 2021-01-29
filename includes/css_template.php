@@ -107,6 +107,10 @@
 					border-radius: 15px;
 					border: 1px solid #6f6e6e;
 				}
+				.time_stamp_com {
+					padding: 5px;
+					background-color: #a2a298;
+				}
 			</style>
 		';
 	}
