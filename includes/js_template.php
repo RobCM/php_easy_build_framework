@@ -73,6 +73,8 @@
 					
 					if(comment_text.length > 0){
 						
+						
+						
 						$("#text_comment_container").hide();
 						$("body").prepend("<div id=\"comment_posted_text\"><center> Comment Posted! </center></div>");
 						$("#comment_posted_text").css("background-color", "#c7d4e4");
@@ -82,8 +84,9 @@
 							$("#text_comment_container").show();
 							$("#history_comment_container").css("background-color", "lightgray");
 							$("#history_comment_container").css("overflow", "auto");
-							$("#history_comment_container").append(comment_text + "<br><div class=\"time_stamp_com\"> Posted on: <br> [" + time_stamp + " ]</div><br><hr>");
+							$("#history_comment_container").append("<div id=\" " +  + "\">" + comment_text + "<br><div class=\"time_stamp_com\"> Posted on: <br> [" + time_stamp + " ]</div><br> <button type=\"button\" id=\"delete_comment_btn\">Delete</button> <hr></div>");
 							$("#comment_posted_text").remove();
+							
 							
 						}, 2000);
 						
@@ -102,6 +105,11 @@
 						
 					}
 					
+				});	
+				
+				// Remove comment button functionality!
+				$("#delete_comment_btn").on("click", function(){
+					$(this).closest("div").hide();
 				});	
 				
 			</script>
