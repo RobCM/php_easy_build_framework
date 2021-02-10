@@ -29,17 +29,12 @@
 				.title_image {
 					width: 50%;
 					margin: auto;
-					height: 100px;
-					border-radius: 15px;
-					padding: 15px;
-				}
-				#the_title_img {
-					width: 100%;
 					height: 150px;
 				}
 				#container_1 {
 					flex: 1;
 					padding: 5px;
+					margin-top: 20px;
 				}
 				#container_2 {
 					flex: 2;
