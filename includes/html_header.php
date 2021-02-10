@@ -20,7 +20,7 @@
 		// Title image
 		echo '
 			<div class="title_image">
-				 <img id="the_title_img" src="./images/titleimage.png"> 
+				 <center><img id="the_title_img" src="./images/php_easy_build_framework_logo.png"></center> 
 			</div>
 		
 		';
