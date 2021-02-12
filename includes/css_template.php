@@ -21,7 +21,7 @@
 					width: 50%;
 					height: 700px;
 					margin: auto;
-					background-color: #c7d4e4;
+					background-color: #ceaa8b;
 					padding: 10px;
 					border-radius: 15px;
 					box-shadow: 9px 14px 6px 0px rgba(0,0,0,0.38);
