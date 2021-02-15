@@ -95,15 +95,17 @@
 				}
 				#comment_posted_text {
 					position: absolute;
-					top: 20%;
-					/* left: 50%; */
+					top: 50%;
+					left: 45%;
 					width: 250px;
 					height: 40px;
 					border-radius: 15px;
 					border: 1px solid #6f6e6e;
+					background-color: #a2a298;
 				}
 				.time_stamp_com {
 					padding: 5px;
+					border-radius: 15px;
 					background-color: #a2a298;
 				}
 			</style>
