@@ -67,9 +67,10 @@
 			
 				$("#comment_btn").on("click", function(){
 					// comment data
-					var comment_text = $("#text_comment").val().trim();
+					let comment_text = $("#text_comment").val().trim();
 					// Timestamp
-					const time_stamp = new Date();
+					let time_stamp = new Date();
+					time_stamp = time_stamp.toLocaleDateString() + " " + time_stamp.getHours() + ":" + time_stamp.getMinutes() + ":" + time_stamp.getSeconds();
 					
 					if(comment_text.length > 0){
 						
@@ -81,12 +82,10 @@
 						
 						$("#text_comment_container").hide();
 						$("body").prepend("<div id=\"comment_posted_text\"><center> Comment Posted! </center></div>");
-						$("#comment_posted_text").css("background-color", "#c7d4e4");
 						
 						setTimeout(function(){
 							
 							$("#text_comment_container").show();
-							$("#history_comment_container").css("background-color", "lightgray");
 							$("#history_comment_container").css("overflow", "auto");
 							$("#history_comment_container").append("<div id=\"" + track_id + "\">" + comment_text + "<br><div class=\"time_stamp_com\"> Posted on: <br> [" + time_stamp + " ]</div><br> <button type=\"button\" id=\"delete_comment_btn_" + track_id + "\">Delete</button> <hr></div>");
 							$("#comment_posted_text").remove();
