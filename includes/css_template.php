@@ -44,6 +44,11 @@
 					padding: 10px;
 					border-radius: 15px;
 					border: 1px solid #6f6e6e;
+					background-image:
+					linear-gradient(
+					  to top right, 
+					  #ceaa8b, #f06d06
+					);
 				}
 				#submit_btn {
 					cursor: pointer;
@@ -79,6 +84,11 @@
 					border-radius: 15px;
 					border: 1px solid #6f6e6e;
 					padding: 10px;
+					background-image:
+					linear-gradient(
+					  to top right, 
+					  #ceaa8b, #f06d06
+					);
 				}
 				textarea {
 				  resize: none;
@@ -92,6 +102,7 @@
 				#history_comment_container {
 					padding: 10px;
 					height: 200px;
+					background-color: #ceaa8b;
 				}
 				#comment_posted_text {
 					position: absolute;
@@ -105,8 +116,14 @@
 				}
 				.time_stamp_com {
 					padding: 5px;
-					border-radius: 15px;
+					border-radius: 10px;
 					background-color: #a2a298;
+					color: white;
+					background-image:
+					linear-gradient(
+					  to top right, 
+					  #ceaa8b, #f06d06
+					);
 				}
 			</style>
 		';
