@@ -65,6 +65,8 @@
 		echo'
 			<script>
 			
+				// Logic to load comments from DB need it!
+			
 				$("#comment_btn").on("click", function(){
 					// comment data
 					let comment_text = $("#text_comment").val().trim();
