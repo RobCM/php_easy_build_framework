@@ -65,7 +65,16 @@
 		echo'
 			<script>
 			
-				// Logic to load comments from DB need it!
+				// Logic to load comments from DB using AJAX!
+				let parameter_to_request_data = { parameter: \'value\' };
+
+				$.post( "URL OF API OR PHP THAT WILL RETURN THE DATA", parameter_to_request_data)
+				.done(function(load_data){
+					// load data to $("#history_comment_container")	
+				})
+				.fail(function(){
+				   console.log("ERROR_LOADING!");
+				})
 			
 				$("#comment_btn").on("click", function(){
 					// comment data
