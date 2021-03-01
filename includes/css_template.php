@@ -113,6 +113,11 @@
 					border-radius: 15px;
 					border: 1px solid #6f6e6e;
 					background-color: #a2a298;
+					background-image:
+					linear-gradient(
+					  to top right, 
+					  #ceaa8b, #f06d06
+					);
 				}
 				.time_stamp_com {
 					padding: 5px;
