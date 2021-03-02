@@ -130,6 +130,15 @@
 					  #ceaa8b, #f06d06
 					);
 				}
+				/* For smart phone screens */
+				@media only screen and (max-width: 500px) {
+					.master_container {
+					  flex-direction: column;
+					  border: none;
+					  width: 100%;
+					  height: 800px;
+					}
+				}
 			</style>
 		';
 	}
