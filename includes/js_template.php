@@ -34,11 +34,15 @@
 		echo'
 			<script>
 			
+				$("input").on("click", function(){
+					// Clean screen if message is on the screen (warnings)
+					$("#comment_posted_text").remove();
+				});
+			
 				$("#submit_btn").on("click", function(){
-			     
-				    var url_value = "post_url.php";
+				    let url_value = "post_url.php";
 					
-					var params = {
+					let params = {
 						value_one: "test_one",
 						value_two: "test_two"
 					}
@@ -46,12 +50,11 @@
 					$.post(url_value, params)
 					.done(function(data){
 						// Append to HTML element
-						$("body").append(data);
-				
+						$("body").append("<div id=\"comment_posted_text\"><center>" + data + "</center></div>");
 					})
 					.fail(function(error){
 						// Error handling
-						alert(error);
+						console.log(error);
 					});
 						
 				});		
