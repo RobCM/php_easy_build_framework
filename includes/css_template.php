@@ -50,7 +50,7 @@
 					  #ceaa8b, #f06d06
 					);
 				}
-				#submit_btn {
+				button {
 					cursor: pointer;
 					height: 35px;
 					width: 80px;
