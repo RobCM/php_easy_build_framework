@@ -101,7 +101,7 @@
 							
 							$("#text_comment_container").show();
 							$("#history_comment_container").css("overflow", "auto");
-							$("#history_comment_container").append("<div id=\"" + track_id + "\">" + comment_text + "<br><div class=\"time_stamp_com\"> Posted on: <br> [" + time_stamp + " ]</div><br> <button type=\"button\" id=\"delete_comment_btn_" + track_id + "\">Delete</button> <hr></div>");
+							$("#history_comment_container").append("<div id=\"" + track_id + "\">" + comment_text + "<br><div class=\"time_stamp_com\"> Posted on: <br> [" + time_stamp + " ]</div><br> <button type=\"button\" id=\"delete_comment_btn_" + track_id + "\" class=\"child_btn\">Delete</button> <hr></div>");
 							$("#comment_posted_text").remove();
 							
 							// Remove comment button functionality
