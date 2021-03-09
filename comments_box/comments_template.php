@@ -17,7 +17,7 @@
 						<center>Comments</center>
 						<textarea id="text_comment" rows="10" cols="6">
 						</textarea>
-						<button type="button" id="comment_btn">Comment</button> 
+						<button type="button" id="comment_btn" class="parent_btn">Comment</button> 
 					</div>
 					<br>
 					<div id="history_comment_container">
