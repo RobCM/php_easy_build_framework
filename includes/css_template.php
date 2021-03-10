@@ -50,11 +50,16 @@
 					  #ceaa8b, #f06d06
 					);
 				}
-				button {
+				.parent_btn {
 					cursor: pointer;
 					height: 35px;
 					width: 80px;
 					margin-left: 240px;
+					border: none;
+				}
+				.child_btn {
+					cursor: pointer;
+					border: none;
 				}
 				input {
 					border-radius: 5px;
@@ -136,7 +141,7 @@
 					  flex-direction: column;
 					  border: none;
 					  width: 100%;
-					  height: 800px;
+					  height: 850px;
 					}
 				}
 			</style>
