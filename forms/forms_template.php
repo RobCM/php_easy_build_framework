@@ -19,7 +19,7 @@
 					<input type="text" id="last_name" name="last_name"><br><br>
 					<label for="last_name">Password:</label><br>
 					<input type="password" id="user_pass" name="user_pass"><br><br>
-					<button type="button" id="submit_btn">Submit</button> 
+					<button type="button" id="submit_btn" class="parent_btn">Submit</button> 
 				</form> 
 		';
 		
@@ -40,7 +40,7 @@
 					<input type="text" id="phone" name="phone"><br><br>
 					<label for="last_name">Password:</label><br>
 					<input type="password" id="user_pass" name="user_pass"><br><br>
-					<button type="button" id="submit_btn">Submit</button> 
+					<button type="button" id="submit_btn" class="parent_btn">Submit</button> 
 				</form> 
 		';
 		
@@ -57,7 +57,7 @@
 					<input type="password" id="user_id" name="user_id"><br><br>
 					<label for="last_name">Password:</label>
 					<input type="password" id="user_pass" name="user_pass"><br><br>
-					<button type="button" id="submit_btn">Submit</button> 				
+					<button type="button" id="submit_btn" class="parent_btn">Submit</button> 				
 				</form> 
 		';
 		
@@ -392,7 +392,7 @@
 					<label for="zip_code">Zip code:</label>	
 					<input type="text" id="zip_code" name="zip_code"><br><br>
 					
-					<button type="button" id="submit_btn">Submit</button> 
+					<button type="button" id="submit_btn" class="parent_btn">Submit</button> 
 					
 				</form> 
 		';
@@ -472,7 +472,7 @@
 						<option value="65">65</option>
 					</select>
 					<br><br>
-					<button type="button" id="submit_btn">Submit</button> 				
+					<button type="button" id="submit_btn" class="parent_btn">Submit</button> 				
 				</form> 
 		';
 		
