@@ -54,12 +54,13 @@
 					cursor: pointer;
 					height: 35px;
 					width: 80px;
-					margin-left: 240px;
 					border: none;
+					border-radius: 5px;
 				}
 				.child_btn {
 					cursor: pointer;
 					border: none;
+					border-radius: 5px;
 				}
 				input {
 					border-radius: 5px;
