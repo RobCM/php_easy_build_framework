@@ -57,10 +57,15 @@
 					border: none;
 					border-radius: 5px;
 				}
-				.child_btn {
+				.child_btn_delete {
 					cursor: pointer;
 					border: none;
 					border-radius: 5px;
+					margin-left: 230px;
+					width: 40px;
+					height: 55px;
+					background-image: url("./images/delete_icon.png");
+					background-repeat: repeat-y;
 				}
 				input {
 					border-radius: 5px;
