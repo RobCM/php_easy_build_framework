@@ -56,6 +56,7 @@
 					width: 80px;
 					border: none;
 					border-radius: 5px;
+					font: italic small-caps bold 12px/30px Georgia, serif;
 				}
 				.child_btn_delete {
 					cursor: pointer;
@@ -64,8 +65,14 @@
 					margin-left: 230px;
 					width: 40px;
 					height: 55px;
+					font: italic small-caps bold 12px/30px Georgia, serif;
 					background-image: url("./images/delete_icon.png");
 					background-repeat: repeat-y;
+				}
+				button:hover {
+					background-color: black;
+					color: white;
+					font: italic small-caps bold 12px/30px Georgia, serif;
 				}
 				input {
 					border-radius: 5px;
