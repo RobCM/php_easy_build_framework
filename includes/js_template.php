@@ -106,8 +106,7 @@
 							
 							// Remove comment button functionality
 							$("#delete_comment_btn_" + track_id + "").on("click", function(){
-								//$(this).closest("div").remove();
-								$(this).closest("div").fadeOut();              
+							    $(this).closest("div").slideUp("slow");					
 							});	
 							
 						}, 2000);
