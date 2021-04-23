@@ -132,4 +132,13 @@
 			</script>
 		';
 	}
+	
+	function js_dynamic_table(){
+		/*
+			working on......
+			@RobertC 4/22/2021
+			
+			this will call the php ---> post_test_dynamic.php
+		*/
+	}
 ?>
