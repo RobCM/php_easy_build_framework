@@ -64,7 +64,7 @@
 	}
 	
 	function js_comment(){
-		
+		// Add AJAX call to this to store/load comments from your database!
 		echo'
 			<script>
 			
@@ -140,5 +140,19 @@
 			
 			this will call the php ---> post_test_dynamic.php
 		*/
+		
+		echo'
+			<script>
+				let url_value_2 = "post_test_dynamic.php";
+				
+				$.post(url_value_2)
+				.done(function(data){
+					console.log(data);
+				})
+				.fail(function(error){
+					// Error handling
+					console.log(error);
+				});
+			</script>';
 	}
 ?>
