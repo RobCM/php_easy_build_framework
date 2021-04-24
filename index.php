@@ -40,6 +40,7 @@
 	js_gui();
 	js_ajax();
 	js_comment();
+	js_dynamic_table();
 			
 	// Set up footer and text on footer
 	html_footer("2021 test page!");
