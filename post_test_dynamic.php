@@ -19,11 +19,11 @@
 	
 	
     $json_response = array(
-		  array("first_name"=>"Thomas", "last_name"=>"Richerdson", "age"=>45),
-		  array("first_name"=>"Amanda", "last_name"=>"Ramirez", "age"=>31),
-		  array("first_name"=>"Joe", "last_name"=>"Dunn", "age"=>2)
+		  array(first_name=>"Thomas", last_name=>"Richerdson", age=>45),
+		  array(first_name=>"Amanda", last_name=>"Ramirez", age=>31),
+		  array(first_name=>"Joe", last_name=>"Dunn", age=>22)
       );
-	
+	  
 	// Convert data to JSON format
 	$json_data = json_encode($json_response);
 	echo $json_data;	
