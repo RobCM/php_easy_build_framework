@@ -38,7 +38,7 @@
 				}
 				#container_2 {
 					flex: 2;
-					padding: 5px;
+					padding: 30px;
 				}
 				form {
 					padding: 10px;
@@ -147,6 +147,18 @@
 					  to top right, 
 					  #ceaa8b, #f06d06
 					);
+				}
+				table {
+					border-collapse: collapse;
+					background-image: linear-gradient( to top right, #ceaa8b, #f06d06 )
+				}
+				th {
+					border: 1px solid #6f6e6e;
+					padding: 5px;
+				}
+				td {
+					border: 1px solid #6f6e6e;
+					padding: 5px;
 				}
 				/* For smart phone screens */
 				@media only screen and (max-width: 500px) {
