@@ -147,7 +147,31 @@
 				
 				$.post(url_value_2)
 				.done(function(data){
-					console.log(data);
+					
+					// Prepare HTML table
+					$("#container_2").html("<table>" +
+										   "  <tr>" +
+										   "	<th>First Name</th>" +
+										   " 	<th>Last Name</th>" +
+										   " 	<th>Age</th>" +
+										   "  </tr>");
+					
+					let table_data = JSON.parse(data);
+				
+					for(let i = 0; i < data.length; i++){
+			
+						$("tr:last").after("<tr>" +
+										   "  <td>" + table_data[i].first_name + "</td>" +
+										   "  <td>" + table_data[i].last_name + "</td>" +
+										   "  <td>" + table_data[i].age + "</td>" +
+										   "<tr>");
+						
+					}
+					
+					// Close table
+					$("#container_2").html("</table>");
+					
+					
 				})
 				.fail(function(error){
 					// Error handling
