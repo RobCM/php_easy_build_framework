@@ -25,7 +25,6 @@
 				</div>
 				<div id="container_2">
 					<br>
-					'.comments_1().'
 				</div>';	
 	
 	// Testing db function (MySQL)
@@ -39,7 +38,7 @@
 	js_libs();
 	js_gui();
 	js_ajax();
-	js_comment();
+	//js_comment();
 	js_dynamic_table();
 			
 	// Set up footer and text on footer
