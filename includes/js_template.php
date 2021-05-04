@@ -135,10 +135,7 @@
 	
 	function js_dynamic_table(){
 		/*
-			working on......
-			@RobertC 4/22/2021
-			
-			this will call the php ---> post_test_dynamic.php
+			This will call the php ---> post_test_dynamic.php
 		*/
 		
 		echo'
@@ -149,7 +146,7 @@
 				.done(function(data){
 					
 					// Prepare HTML table
-					$("#container_2").html("<table>" +
+					$("#container_2").html("<table >" +
 										   "  <tr>" +
 										   "	<th>First Name</th>" +
 										   " 	<th>Last Name</th>" +
@@ -177,6 +174,40 @@
 					// Error handling
 					console.log(error);
 				});
+				
 			</script>';
 	}
+	
+	function js_sortable_table(){
+		
+		echo'
+			<script>
+			// Organize table (make table sortable!)
+			$("th").click(function(){
+				let table = $(this).parents("table").eq(0)
+				let rows = table.find("tr:gt(0)").toArray().sort(comparer($(this).index()))
+				this.asc = !this.asc
+				if (!this.asc){
+					rows = rows.reverse()
+				}
+				for (let i = 0; i < rows.length; i++){
+					table.append(rows[i])
+				}
+			})
+		
+			function comparer(index){
+				return function(a, b){
+					let valA = getCellValue(a, index)
+					let	valB = getCellValue(b, index)
+					return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.toString().localeCompare(valB)
+				}
+			}
+			
+			function getCellValue(row, index){ 
+				return $(row).children("td").eq(index).text() 
+			}
+			
+			</script>';	
+	}
+	
 ?>
