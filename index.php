@@ -40,6 +40,7 @@
 	js_ajax();
 	//js_comment();
 	js_dynamic_table();
+	js_sortable_table();
 			
 	// Set up footer and text on footer
 	html_footer("2021 test page!");
