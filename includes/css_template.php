@@ -155,6 +155,7 @@
 				th {
 					border: 1px solid #6f6e6e;
 					padding: 5px;
+					cursor: pointer;
 				}
 				td {
 					border: 1px solid #6f6e6e;
