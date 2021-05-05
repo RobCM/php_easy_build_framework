@@ -156,18 +156,45 @@
 					let table_data = JSON.parse(data);
 				
 					for(let i = 0; i < data.length; i++){
-			
-						$("tr:last").after("<tr>" +
-										   "  <td>" + table_data[i].first_name + "</td>" +
-										   "  <td>" + table_data[i].last_name + "</td>" +
-										   "  <td>" + table_data[i].age + "</td>" +
-										   "<tr>");
+						
+						if(typeof(table_data[i]) == "undefined"){
+						  
+						}
+						else{
+							$("tr:last").after("<tr>" +
+											   "  <td>" + table_data[i].first_name + "</td>" +
+											   "  <td>" + table_data[i].last_name + "</td>" +
+											   "  <td>" + table_data[i].age + "</td>" +
+											   "<tr>");
+						}
 						
 					}
 					
 					// Close table
-					$("#container_2").html("</table>");
+					$("#container_2").append("</table>");
 					
+					// Make table sortable!
+					$("th").on("click", function(){
+						let table = $(this).parents("table").eq(0)
+						let rows = table.find("tr:gt(0)").toArray().sort(comparer($(this).index()))
+						this.asc = !this.asc
+						if (!this.asc){
+							rows = rows.reverse()
+						}
+						for (let i = 0; i < rows.length; i++){
+							table.append(rows[i])
+						}
+					})
+					function comparer(index){
+						return function(a, b){
+							let valA = getCellValue(a, index)
+							let	valB = getCellValue(b, index)
+							return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.toString().localeCompare(valB)
+						}
+					}
+					function getCellValue(row, index){ 
+						return $(row).children("td").eq(index).text()
+					}
 					
 				})
 				.fail(function(error){
@@ -176,38 +203,6 @@
 				});
 				
 			</script>';
-	}
-	
-	function js_sortable_table(){
-		
-		echo'
-			<script>
-			// Organize table (make table sortable!)
-			$("th").click(function(){
-				let table = $(this).parents("table").eq(0)
-				let rows = table.find("tr:gt(0)").toArray().sort(comparer($(this).index()))
-				this.asc = !this.asc
-				if (!this.asc){
-					rows = rows.reverse()
-				}
-				for (let i = 0; i < rows.length; i++){
-					table.append(rows[i])
-				}
-			})
-		
-			function comparer(index){
-				return function(a, b){
-					let valA = getCellValue(a, index)
-					let	valB = getCellValue(b, index)
-					return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.toString().localeCompare(valB)
-				}
-			}
-			
-			function getCellValue(row, index){ 
-				return $(row).children("td").eq(index).text() 
-			}
-			
-			</script>';	
 	}
 	
 ?>
