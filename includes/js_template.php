@@ -4,7 +4,7 @@
 		
 		@RobertC 8/5/2020
 		
-		public function to pass JavaScript code
+		function to pass JavaScript code
 		
 		It also calls the jQuery library
 
@@ -37,12 +37,12 @@
 				echo'
 					<script>
 					
-						$("input").on("click", public function(){
+						$("input").on("click", function(){
 							// Clean screen if message is on the screen (warnings)
 							$("#comment_posted_text").remove();
 						});
 					
-						$("#submit_btn").on("click", public function(){
+						$("#submit_btn").on("click", function(){
 							let url_value = "post_url.php";
 							
 							let params = {
@@ -51,11 +51,11 @@
 							}
 
 							$.post(url_value, params)
-							.done(public function(data){
+							.done(function(data){
 								// Append to HTML element
 								$("body").append("<div id=\"comment_posted_text\"><center>" + data + "</center></div>");
 							})
-							.fail(public function(error){
+							.fail(function(error){
 								// Error handling
 								console.log(error);
 							});
@@ -75,7 +75,7 @@
 						let parameter_to_request_data = { parameter: \'value\' };
 
 						$.post( "URL OF API OR PHP THAT WILL RETURN THE DATA", parameter_to_request_data)
-						.done(public function(load_data){
+						.done(function(load_data){
 							// load data to $("#history_comment_container")	
 						})
 						.fail(function(){
@@ -107,8 +107,8 @@
 									$("#history_comment_container").append("<div id=\"" + track_id + "\">" + comment_text + "<br><div class=\"time_stamp_com\"> Posted on: <br> [" + time_stamp + " ]</div><br> <button type=\"button\" id=\"delete_comment_btn_" + track_id + "\" class=\"child_btn_delete\"></button> <hr></div>");
 									$("#comment_posted_text").remove();
 									
-									// Remove comment button public functionality
-									$("#delete_comment_btn_" + track_id + "").on("click", public function(){
+									// Remove comment button functionality
+									$("#delete_comment_btn_" + track_id + "").on("click", function(){
 										$(this).closest("div").slideUp("slow");					
 									});	
 									
