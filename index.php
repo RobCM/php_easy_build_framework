@@ -35,14 +35,12 @@
 			</div>';		
 	
 	// Call js functions at the end so it can function after all html components have been load!
-	//js_libs();
-	//js_gui();
-	//js_ajax();
-	//js_comment();
-	//js_dynamic_table();
-	$load_framework = new easy_php_js();    
-	echo $load_framework->js_libs();
-	echo $load_framework->js_dynamic_table();
+	$load_framework_js = new easy_php_js();    
+	echo $load_framework_js->js_libs();
+	echo $load_framework_js->js_gui();
+	echo $load_framework_js->js_ajax();
+	//echo $load_framework_js->js_comment();
+	echo $load_framework_js->js_dynamic_table();
 			
 	// Set up footer and text on footer
 	html_footer("2021 test page!");
