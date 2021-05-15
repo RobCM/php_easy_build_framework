@@ -10,7 +10,7 @@
 
 	*/
 	
-	class easy_php_js {
+	class easy_php_js{
 		
 			public function js_libs(){
 				echo'
