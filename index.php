@@ -15,13 +15,15 @@
 	html_header("Test Page");
 	
 	// Call css template
-	css_template();
+	$load_framework_css = new easy_php_css();
+	echo $load_framework_css->css_template();
 	
 	// Example body!
+	$load_framework_form = new easy_php_form();
 	echo '
 			<div class="master_container">	
 				<div id="container_1">
-					'.form_2().' 
+					'.$load_framework_form->form_2().' 
 				</div>
 				<div id="container_2">
 					<br>
