@@ -12,7 +12,10 @@
 	include './comments_box/comments_template.php';
 	
 	// Set up header and page title
-	html_header("Test Page");
+
+	
+	$load_framework_header = new easy_php_header();
+	echo $load_framework_header->html_header("Test Page");
 	
 	// Call css template
 	$load_framework_css = new easy_php_css();
