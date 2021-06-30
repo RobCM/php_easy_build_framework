@@ -7,7 +7,7 @@
 		working on this!
 
 	*/
-	class easy_php_{
+	class easy_php_calendar{
 		
 		
 		
