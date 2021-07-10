@@ -10,6 +10,7 @@
 	include './db/db_connection.php';
 	include './forms/forms_template.php';
 	include './comments_box/comments_template.php';
+	include './calendar/calendar_template.php';
 	
 	// Set up header and page title
 	$load_framework_header = new easy_php_header();
@@ -43,9 +44,11 @@
 	echo $load_framework_js->js_gui();
 	echo $load_framework_js->js_ajax();
 	//echo $load_framework_js->js_comment();
-	echo $load_framework_js->js_dynamic_table();
-			
+	//echo $load_framework_js->js_dynamic_table();
+	
+	
 	// Set up footer and text on footer
 	$load_framework_footer = new easy_php_footer();
 	echo $load_framework_footer->html_footer("2021 test page!");
+	
 ?>
