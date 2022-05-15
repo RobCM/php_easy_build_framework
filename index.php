@@ -1,5 +1,6 @@
 <?php
 	// To block PHP errors comment out if need it for testing!
+	// Testing GIT commit 5/15/2022!
 	error_reporting(E_ERROR);
 	
 	// Calling includes
