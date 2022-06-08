@@ -8,7 +8,7 @@
 
 	*/
 	
-	class easy_php_form{
+	class easy_php_comments{
 		
 		public function comments_1(){
 			
