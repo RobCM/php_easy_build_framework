@@ -1,6 +1,5 @@
 <?php
 	// To block PHP errors comment out if need it for testing!
-	// Testing GIT commit 5/15/2022!
 	error_reporting(E_ERROR);
 	
 	// Calling includes
@@ -23,6 +22,8 @@
 	
 	// Example body!
 	$load_framework_form = new easy_php_form();
+	$load_framework_comments = new easy_php_comments();
+	
 	echo '
 			<div class="master_container">	
 				<div id="container_1">
@@ -30,6 +31,7 @@
 				</div>
 				<div id="container_2">
 					<br>
+					'.$load_framework_comments->comments_1().' 
 				</div>';	
 	
 	// Testing db function (MySQL)
@@ -44,7 +46,7 @@
 	echo $load_framework_js->js_libs();
 	echo $load_framework_js->js_gui();
 	echo $load_framework_js->js_ajax();
-	//echo $load_framework_js->js_comment();
+	echo $load_framework_js->js_comment();
 	//echo $load_framework_js->js_dynamic_table();
 	
 	
