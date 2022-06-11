@@ -66,8 +66,8 @@
 						border: none;
 						border-radius: 5px;
 						margin-left: 230px;
-						width: 40px;
-						height: 55px;
+						width: 50px;
+						height: 40px;
 						font: italic small-caps bold 12px/30px Georgia, serif;
 						background-image: url("./images/delete_icon.png");
 						background-repeat: repeat-y;
