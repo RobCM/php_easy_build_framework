@@ -1,5 +1,5 @@
 <?php
-	// To block PHP errors comment out if need it for testing!
+	// To block PHP errors comment out below line else leave for testing purposes!
 	error_reporting(E_ERROR);
 	
 	// Calling includes
